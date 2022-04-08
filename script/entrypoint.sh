@@ -25,8 +25,10 @@ export \
 
 # Install custom python package if requirements.txt is present
 if [ -e "/requirements.txt" ]; then
+    echo 'voranon1'
     $(command -v pip) install --user -r /requirements.txt
 fi
+    echo 'voranon2'
 
 wait_for_port() {
   local name="$1" host="$2" port="$3"
